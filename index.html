@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <!-- Site CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-v4.4.0.css" rel="stylesheet">
+        
+        <link href="./css/zmf.css" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            .top-navbar{
+                height: 65px;
+                background: #A7151F
+            }
+            .top-navbar .nav-center ul{
+                list-style: none;
+                text-align: center
+            }
+            .top-navbar .nav-center ul li{
+                display: inline-block;
+                font-size: 24px;
+                line-height: 65px;
+                text-align: center
+            }
+            .top-navbar .nav-center ul li.divier{
+                margin: 0 15px;
+                color: #fff
+            }
+            .top-navbar .nav-center ul li a{                
+                color: #fff
+            }
+            .module{
+                padding: 45px 0
+            }            
+            .activity-desc{
+                position: relative;
+                padding: 0 30px;
+            }
+            .activity-desc .fa-quote-left{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 36px;
+                color: #e4e4e4
+            }
+            .activity-desc .fa-quote-right{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 36px;
+                color: #e4e4e4
+            }
+            .activity-desc .media-body p{
+                text-indent: 2em;
+                margin-bottom: 20px
+            }
+            .more-awesome {
+                color: #999;
+                font-size: 14px;
+                text-align: center;
+                
+                margin-bottom: 30px;
+                margin-top: 15px;
+            }
+            .more-awesome span {
+                position: relative;
+                top: 13px;
+                
+                padding: 0 20px;
+            } 
+            .white-bg{
+                background: #fff
+            }
+            .grey-bg{
+                background: #f2f2f2
+            }
+            .white-bg .more-awesome{
+                border-bottom: 8px solid #eee;
+            }
+            .white-bg .more-awesome span{
+                background-color: #fff;
+            }
+            .grey-bg .more-awesome{
+                border-bottom: 8px solid #e4e4e4;
+            }
+            .grey-bg .more-awesome span{
+                background-color: #f2f2f2;
+            }
+            
+            .activity-timeline .table td,.activity-timeline .table th{
+                text-align: center;
+                vertical-align: middle
+            }
+        </style>
+        <div class="head-box">
+            <div class="banner-background" style="opacity: 1; background-image: url('./images/header-bg.png');"></div>
+            <div class="new-banner">
+                <div class="title"><h1>藏博会</h1></div>                    
+            </div>                
+        </div>
+        <div class="container-fluid top-navbar">
+            <div class="container">
+                <div class="nav-center">
+                    <ul>
+                        <li><a href="javascript:;"><i class="fa fa-caret-right"></i> 阅览•藏博</a></li>
+                        <li class="divier">|</li>
+                        <li><a href="javascript:;"><i class="fa fa-caret-right"></i> 热力•藏博</a></li>                        
+                        <li class="divier">|</li>
+                        <li><a href="javascript:;"><i class="fa fa-caret-right"></i> 溯源•藏博</a></li>
+                        <li class="divier">|</li>
+                        <li><a href="javascript:;"><i class="fa fa-caret-right"></i> 问道•藏博</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <style>
+            .side-fixed-nav{
+                position: fixed;
+                right: 0;
+                top: 40%;
+                background: #A61817;
+                color: #fff;      
+                z-index: 9
+            }
+            .side-fixed-nav ul{
+                margin: 0;
+                padding: 0
+            }
+            .side-fixed-nav ul li{
+                list-style: none;
+                border-bottom: 1px solid #fff;
+                padding: 10px 15px
+            }
+            .side-fixed-nav ul li a{
+                color: #fff;
+            }
+            .side-fixed-nav ul li a:hover{
+                text-decoration: none;
+                
+            }
+            .side-fixed-nav ul li:hover{
+                opacity: .6            
+            }
+        </style>
+        <div class="side-fixed-nav">
+            <ul>
+                <li><a href="javascript:;">阅览•藏博</a></li>
+                <li><a href="javascript:;">热力•藏博</a></li>
+                <li><a href="javascript:;">溯源•藏博</a></li>                
+                <li><a href="javascript:;">问道•藏博</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid white-bg">
+            <div class="container module">
+                <div class="module-title">阅览•藏博</div>
+                <div class="more-awesome"><span>活动简介</span></div>
+                <div class="activity-desc">
+                    <i class="fa fa-quote-left"></i>
+                    <div class="media">
+                        <div class="media-left"></div>
+                        <div class="media-body">
+                            <p>第三届中国西藏旅游文化国际博览会（简称"藏博会"）定于2016年9月10日至16日在拉萨举办。</p>
+                            <p>第三届藏博会由文化部、国家旅游局、自治区人民政府共同主办。本届藏博会将延续"人间圣地 天上西藏"的主题，充分展示在中国共产党领导下社会主义新西藏半个多世纪以来取得的辉煌成就和巨大进步，充分展示今日西藏经济发展、社会进步、民族团结、和谐稳定、生态良好、人民安居乐业的新面貌，以及西藏独特的自然景观和优秀传统文化。</p>
+                            <p>本届藏博会将按照“突出主题，提升品质；政府主导，市场参与；简朴隆重，体现特色；正面宣传，主动发声；跟踪问效；全程监管；确保安全，和谐有序”的原则要求，突出活动的时效性，体现鲜明的主题特色，力求把第三届藏博会打造成创新发展的新载体、绿色发展的新引擎，打造成具有国际影响力、全国辐射力、区域带动力的高端展示、开放合作、经贸交流和宣传推介平台。</p>
+                            <p>通过举办藏博会，全面提升西藏旅游文化认知度，打造旅游升级版，增强西藏旅游文化在国际国内的吸引力、竞争力和影响力，促进旅游业与文化产业及其他相关领域的融合，促进西藏优秀文化的保护与发展，推动重要的世界旅游目的地和中华民族特色文化保护地的建设。</p>
+                        </div>
+                    </div>                    
+                    <i class="fa fa-quote-right"></i>
+                </div>
+                <div class="more-awesome"><span>日程安排</span></div>
+                <style>
+                    .activity-timeline .more p{
+                        border-bottom: 1px dashed #e4e4e4;
+                        padding-bottom: 10px
+                    }
+                    .activity-timeline .acitvity{
+                        width: 350px;
+                        display: inline-block;
+                    }
+                </style>
+                <div class="activity-timeline">
+
+
+
+
+                    <div class="content">
+                        <div class="wrapper">
+                            <div class="main">
+                                <div class="year">
+                                    <div class="list">
+                                        <ul>
+                                            <li class="cls highlight">
+                                                <p class="intro">9月1日~10月7日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">2016.西藏喜马拉雅摄影文化节</span><span class="address">布达拉宫广场</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月10日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">欢迎招待会</span><span class="address">拉萨圣地天堂洲际酒店</span></p>
+                                                    <p><span class="acitvity">开幕式（20:30-22:00）</span><span class="address">西藏会展中心广场</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月11日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">开馆巡展（10:00-12:30）</span><span class="address">西藏会展中心1号馆、2号馆</span></p>
+                                                    <p><span class="acitvity">中国西藏旅游文化论坛（15:30-18:30）</span><span class="address">拉萨圣地天堂洲际酒店西藏厅</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月11日~10月7日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">展览展示、产品展销活动</span><span class="address">西藏会展中心1号、2号馆</span></p>
+                                                    <p><span class="acitvity">展览展示、产品展销活动</span><span class="address">布达拉宫雪域珍宝馆</span></p>
+                                                </div>
+                                            </li>                                            
+                                            <li class="cls">
+                                                <p class="intro">9月12日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">中国西藏旅游文化主旨论坛（9:30-12:30）</span><span class="address">拉萨圣地天堂洲际酒店西藏厅</span></p>
+                                                    <p><span class="acitvity">天然饮用水分论坛（10:00-18:30）</span><span class="address">拉萨饭店吉祥厅</span></p>
+                                                    <p><span class="acitvity">重点项目签约仪式（15:30-16:30）</span><span class="address">拉萨香格里拉大酒店</span></p>
+                                                    <p><span class="acitvity">布达拉宫珍宝馆开馆巡展活动（16:00-18:00）</span><span class="address">拉萨香格里拉大酒店</span></p>
+                                                    <p><span class="acitvity">茶马古道旅游推介会（16:30-18:30）</span><span class="address">拉萨香格里拉大酒店</span></p>
+                                                    <p><span class="acitvity">“最西藏”旅游线路发布会（16:30-18:30）</span><span class="address">拉萨香格里拉大酒店</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月13日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">旅游分论坛（9:00-18:30）</span><span class="address">拉萨香格里拉大酒店</span></p>
+                                                    <p><span class="acitvity">藏医药分论坛（10：00-18：30）</span><span class="address">拉萨圣地天堂洲际酒店西藏厅</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月14日~16日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">旅游精品体验活动</span><span class="address"></span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月15日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">文化分论坛（9:30-18:30）</span><span class="address">拉萨圣地天堂洲际酒店西藏厅</span></p>
+                                                    <p><span class="acitvity">招商引资项目推介会（9:30-18:30）</span><span class="address">拉萨饭店吉祥厅</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="cls">
+                                                <p class="intro">9月16日</p>
+                                                <div class="more">
+                                                    <p><span class="acitvity">闭幕式及招商引资集中签约仪式（10:00-10:30）</span><span class="address">拉萨圣地天堂洲际酒店西藏厅</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <table class="table table-hover table-bordered hidden">
+                        <tr>
+                            <th>时间</th>
+                            <th>活动内容</th>
+                            <th>地点</th>
+                        </tr>
+                        <tr>
+                            <td>9月1日至10月7日</td>
+                            <td>2016.西藏喜马拉雅摄影文化节</td>
+                            <td>布达拉宫广场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9月10日</td>
+                            <td>欢迎招待会</td>
+                            <td>拉萨圣地天堂洲际酒店</td>
+                        </tr>
+                        <tr>
+                            <td>开幕式（20:30-22:00）</td>
+                            <td>西藏会展中心广场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9月11日</td>
+                            <td>开馆巡展（10:00-12:30）</td>
+                            <td>西藏会展中心1号馆、2号馆</td>
+                        </tr>
+                        <tr>
+                            <td>中国西藏旅游文化论坛（15:30-18:30）</td>
+                            <td>拉萨圣地天堂洲际酒店西藏厅</td>
+                        </tr>
+                        <tr>
+                            <td>9月11日至10月7日</td>
+                            <td>展览展示、产品展销活动</td>
+                            <td>西藏会展中心1号、2号馆<br/>布达拉宫雪域珍宝馆</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">9月12日</td>
+                            <td>中国西藏旅游文化主旨论坛（9:30-12:30）</td>
+                            <td>拉萨圣地天堂洲际酒店西藏厅</td>
+                        </tr>
+                        <tr>
+                            <td>天然饮用水分论坛（10:00-18:30）</td>
+                            <td>拉萨饭店吉祥厅</td>
+                        </tr>
+                        <tr>
+                            <td>重点项目签约仪式（15:30-16:30）</td>
+                            <td>拉萨香格里拉大酒店</td>
+                        </tr>
+                        <tr>
+                            <td>布达拉宫珍宝馆开馆巡展活动（16:00-18:00）</td>
+                            <td>拉萨香格里拉大酒店</td>
+                        </tr>
+                        <tr>
+                            <td>茶马古道旅游推介会（16:30-18:30）</td>
+                            <td>拉萨香格里拉大酒店</td>
+                        </tr>
+                        <tr>
+                            <td>“最西藏”旅游线路发布会（16:30-18:30）</td>
+                            <td>拉萨香格里拉大酒店</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9月13日</td>
+                            <td>旅游分论坛（9:00-18:30））</td>
+                            <td>拉萨香格里拉大酒店</td>
+                        </tr>
+                        <tr>
+                            <td>藏医药分论坛（10：00-18：30）</td>
+                            <td>拉萨圣地天堂洲际酒店西藏厅</td>
+                        </tr>
+                        <tr>
+                            <td>9月14日至16日</td>
+                            <td colspan="2">旅游精品体验活动</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9月15日</td>
+                            <td>文化分论坛（9:30-18:30）</td>
+                            <td>拉萨圣地天堂洲际酒店西藏厅</td>
+                        </tr>
+                        <tr>
+                            <td>招商引资项目推介会（9:30-18:30）</td>
+                            <td>拉萨饭店吉祥厅</td>
+                        </tr>
+                        <tr>
+                            <td>9月16日</td>
+                            <td>闭幕式及招商引资集中签约仪式（10:00-10:30）</td>
+                            <td>拉萨圣地天堂洲际酒店西藏厅</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>        
+        <style>
+            .media-reports .thumbnail{
+                position: relative
+            }
+            .media-reports .thumbnail .caption h3{
+                font-size: 16px;
+                font-weight: 700
+            }
+            .media-reports .thumbnail .media-title{
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                background: #A61817;
+                color: #fff;
+                padding: 5px 10px;
+            }
+        </style>
+        <div class="container-fluid grey-bg">
+            <div class="container module">
+                <div class="module-title">热力•藏博</div>
+                <div class="more-awesome"><span>媒体报道</span></div>
+                <div class="media-reports row">
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏日报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>第三届藏博会举行首场新闻发布会</h3>
+                                <p>8月10日上午，自治区人民政府新闻办公室举行了第…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏日报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>我区启动藏博会网上招商活动</h3>
+                                <p>8月8日上午，第三届藏博会网上招商活动启动仪式在…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏商报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>第三届藏博会网上招商活动启动仪式在拉萨举行</h3>
+                                <p>8月8日上午，第三届藏博会网上招商活动启动仪式在…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏商报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>第三届藏博会创新开创移动互联网平台</h3>
+                                <p>第三届中国西藏旅游文化国际博览会将按照“突出…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏商报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>迎藏博会  拉萨交警开展交通整治</h3>
+                                <p>8月10日，记者从拉萨市公安局交警支队获悉，根据…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏商报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>第三届藏博会贵宾嘉宾规模将达1500人</h3>
+                                <p>据自治区政府常务副秘书长、藏博会组委会办公室常…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">中国西藏新闻网</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>第三届藏博会与9月10日至9月16日在拉萨举办</h3>
+                                <p>10日上午，自治区人民政府新闻办公室举行了第三届…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="thumbnail">
+                            <span class="media-title">西藏日报</span>
+                            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU2YjJjNjQ4ZmIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTZiMmM2NDhmYiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>自治区领导检查夏季消防和藏博会消防安全工作</h3>
+                                <p>12日下午，自治区领导带队检查夏季消防和藏博会有…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="more-awesome"><span>玩转新藏博</span></div>
+            </div>
+        </div>
+        
+        <style>
+            .history-holder .gallery-box{
+                width: 800px;
+                float: left;
+                margin-left: -3px;
+            }
+            .history-holder .history-list{
+                width: 200px;
+                float: left
+            }
+            .history-holder .gallery-box img{
+                width: 124px;
+                height: 93px;
+                float: left;
+                margin: 0 3px 6px
+            }
+            .history-holder .history-list ul{
+                margin: 0;
+                padding: 0;
+                list-style: none
+            }
+            .history-holder .history-list ul li{
+                margin-bottom: 15px;
+            }
+            .history-holder .history-list .dot{
+                padding: 3px 5px;
+                border-radius: 2px;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                margin-right: 5px;
+            }
+            .history-holder .history-list .top{
+                background: #A61817;
+            }
+            
+            .history-reports{
+                clear: both;
+                margin-top: 30px
+            }
+            .reports-year{
+                background: #A61817;
+                height: 340px;
+                text-align: center;
+                color: #fff;
+                box-sizing: border-box
+            }
+            .reports-year .title{
+                font-size: 36px;
+                font-weight: bold;
+                margin: 80px 0 30px
+            }
+            .reports-year .more{
+                margin-top: 30px
+            }
+            .reports-year .more a{
+                color: #FB9796;
+                border: 1px solid #FB9796;
+                padding: 5px 15px;
+            }
+            .reports-center{
+                font-size: 13px;                
+            }
+            .reports-center .media{
+                border-bottom: 1px solid #e4e4e4
+            }
+            .reports-center .media:last-child{
+                border-bottom: none
+            }
+            .reports-center .media img{
+                width: 124px;
+                height: 93px;
+                margin-bottom: 15px;
+            }
+            .reports-center .title{
+                font-weight: 700;
+                font-size: 16px
+            }
+            .reports-right{
+                position: relative;
+                width: 250px;
+                height: 340px;
+                overflow: hidden
+            }
+            .reports-right img{
+                width: 250px;
+                height: 340px
+            }
+        </style>
+        <div class="container-fluid white-bg">
+            <div class="container module">
+                <div class="module-title">溯源•藏博</div>
+                <div class="more-awesome"><span>2014藏博</span></div>
+                <div class="history-reports">
+                    <div class="col-xs-3 col-sm-3 reports-year">                        
+                        <p class="title">2014主题</p>
+                        <p class="year">2014藏博</p>
+                        <p class="more"><a href="#">更多 <i class="fa fa-caret-right"></i></a></p>                        
+                    </div>
+                    <div class="col-xs-6 col-sm-6 reports-center">
+                        <div class="media">
+                            <div class="media-left"><img src="http://img1.chuxincw.com/posts/2016/07/14/A0204A1E-9690-D53B-2DB5-578FCBDE36BF.jpg/c120"/></div>
+                            <div class="media-body">
+                                <p class="title">首届藏博会展览展示开展</p>
+                                <p>人间圣地，生机盎然；天上西藏，宾客云集。西藏博物馆内，黄瓦飞檐，鲜花争艳，首届中国西藏旅游文化国际博览会展览展示9月26日在拉萨正式开展…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="title">万事俱备 首届“藏博会”今晚开幕</p>
+                                <p>记者9月24日从首届藏博会第二次新闻发布会现场了解到，筹备工作启动以来，组委会各工作组和参与筹办工作的自治区相关部门和各地（市）高度重视、迅速行动、有力组织、认真实施、扎实推进。目前…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <p  class="title">万事俱备 首届“藏博会”今晚开幕</p>
+                                <p>记者9月24日从首届藏博会第二次新闻发布会现场了解到，筹备工作启动以来，组委会各工作组和参与筹办工作的自治区相关部门和各地（市）高度重视、迅速行动、有力组织、认真实施、扎实推进。目前…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 reports-right">
+                        <a href="#">
+                            <img src="http://img1.chuxincw.com/book/2016/08/18/8E26547A-E19D-0A3F-7512-823001369718.jpg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="more-awesome"><span>2015藏博</span></div>
+                <div class="history-reports">
+                    <div class="col-xs-3 col-sm-3 reports-year">                        
+                        <p class="title">2015主题</p>
+                        <p class="year">2015藏博</p>
+                        <p class="more"><a href="#">更多 <i class="fa fa-caret-right"></i></a></p>                        
+                    </div>
+                    <div class="col-xs-6 col-sm-6 reports-center">
+                        <div class="media">
+                            <div class="media-left"><img src="http://img1.chuxincw.com/posts/2016/07/14/A0204A1E-9690-D53B-2DB5-578FCBDE36BF.jpg/c120"/></div>
+                            <div class="media-body">
+                                <p class="title">首届藏博会展览展示开展</p>
+                                <p>人间圣地，生机盎然；天上西藏，宾客云集。西藏博物馆内，黄瓦飞檐，鲜花争艳，首届中国西藏旅游文化国际博览会展览展示9月26日在拉萨正式开展…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="title">万事俱备 首届“藏博会”今晚开幕</p>
+                                <p>记者9月24日从首届藏博会第二次新闻发布会现场了解到，筹备工作启动以来，组委会各工作组和参与筹办工作的自治区相关部门和各地（市）高度重视、迅速行动、有力组织、认真实施、扎实推进。目前…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <p  class="title">万事俱备 首届“藏博会”今晚开幕</p>
+                                <p>记者9月24日从首届藏博会第二次新闻发布会现场了解到，筹备工作启动以来，组委会各工作组和参与筹办工作的自治区相关部门和各地（市）高度重视、迅速行动、有力组织、认真实施、扎实推进。目前…<a href="#">查看详情</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 reports-right">
+                        <a href="#">
+                            <img src="http://img1.chuxincw.com/book/2016/08/18/8E26547A-E19D-0A3F-7512-823001369718.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid grey-bg">
+            <div class="container module">
+                <div class="module-title">问道•藏博</div>
+                <div class="more-awesome"><span>活动地点</span></div>
+                <table class="table table-striped table-hover table-bordered">
+                    <tr>
+                        <th style="width:50%">地点</th>
+                        <th>地址</th>
+                    </tr>
+                    <tr>
+                        <td>布达拉宫广场</td>
+                        <td>西藏自治区拉萨市城关区北京中路35号</td>
+                    </tr>
+                    <tr>
+                        <td>拉萨圣地天堂洲际酒店</td>
+                        <td>西藏自治区拉萨市城关区江苏大道1号</td>
+                    </tr>
+                    <tr>
+                        <td>西藏会展中心</td>
+                        <td>西藏自治区拉萨市城关区那津东路</td>
+                    </tr>
+                    <tr>
+                        <td>拉萨饭店</td>
+                        <td>西藏自治区拉萨市城关区民族中路1号</td>
+                    </tr>
+                    <tr>
+                        <td>拉萨香格里拉大酒店</td>
+                        <td>西藏自治区拉萨市罗布林卡路19号</td>
+                    </tr>
+                </table>
+                <style>
+                    .contact-us{
+                        text-align: center;
+                        padding: 50px 0
+                    }
+                    .contact-us .fa{
+                        font-size: 72px;
+                    }
+                    .contact-us .col-xs-3{
+                        border-right: 1px solid #e4e4e4;
+                    }
+                    .contact-us .col-xs-3:last-child{
+                        border-right: none
+                    }
+                </style>
+                <div class="clearfix"></div>
+                <div class="more-awesome"><span>关注我们</span></div>
+                <div class="contact-us row">
+                    <div class="col-xs-3 col-sm-3">
+                        <p><i class="fa fa-weibo"></i></p>
+                        <p>@微博账号</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+                        <p><i class="fa fa-weixin"></i></p>
+                        <p>微信公众号</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+                        <p><i class="fa fa-qrcode"></i></p>
+                        <p>旅发委官网</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+                        <p><i class="fa fa-qrcode"></i></p>
+                        <p>区旅发委官方微博</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .footer{
+                padding: 80px 0;
+                background: #333;
+                color: #fff;
+                text-align: center
+            }
+            .footer p{
+                margin: 0
+            }
+        </style>
+        <div class="container-fluid footer">
+            <div class="container">
+                <p>&copy;2016 dafei 备案号xxxxxxxxx</p>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+	$(".main .year .list").each(function (e, target) {
+	    var $target=  $(target),
+	        $ul = $target.find("ul");
+	    $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+	}); 
+	$(".main .year>h2>a").click(function (e) {
+	    e.preventDefault();
+	    $(this).parents(".year").toggleClass("close");
+	});
+	</script>
+    </body>
+</html>
