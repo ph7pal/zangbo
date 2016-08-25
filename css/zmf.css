@@ -420,3 +420,39 @@ ul, li {
 .footer p{
     margin: 0
 }
+/*新闻页面*/
+.news-page{
+    background: #f8f8f8
+}
+.news-container{
+    margin-top: 15px;
+}
+.news-container .breadcrumb{
+    margin-bottom: 0;
+}
+.news-content{
+    background: #fff;
+    padding-top: 20px;
+    border: 1px solid #f5f5f5;
+    border-top: none;
+    margin-bottom: 30px;
+}
+.news-content h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0
+}
+.news-content .news-text{
+    padding:0 20px 20px;
+
+}
+.news-content .news-text p{
+    text-indent: 2em;
+    line-height: 1.75
+}
+.news-content .news-text img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto
+}
