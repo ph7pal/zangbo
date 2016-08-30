@@ -45,7 +45,13 @@ ul, li {
     text-align: center;
 
 }
-
+.carousel{
+    margin-top: 30px
+}
+.carousel .item img{
+    width: 1000px;
+    height: 500px
+}
 .module-title{
     width: 100%;
     height: 50px;
@@ -53,8 +59,19 @@ ul, li {
     line-height: 50px;
     font-size: 24px;
     padding-left: 15px;
-    color: #fff;
-    background: url(../images/mod_item_bg.png) no-repeat left center
+    color: #fff;    
+}
+.bg1{
+    background: url(../images/1.jpg) no-repeat left center
+}
+.bg2{
+    background: url(../images/2.jpg) no-repeat left center
+}
+.bg3{
+    background: url(../images/3.jpg) no-repeat left center
+}
+.bg4{
+    background: url(../images/4.jpg) no-repeat left center
 }
 .top-navbar{
     height: 65px;
@@ -154,7 +171,8 @@ ul, li {
     top: 40%;
     background: #A61817;
     color: #fff;      
-    z-index: 9
+    z-index: 9;
+    display: none
 }
 .side-fixed-nav ul{
     margin: 0;
@@ -168,9 +186,8 @@ ul, li {
 .side-fixed-nav ul li a{
     color: #fff;
 }
-.side-fixed-nav ul li a:hover{
+.side-fixed-nav ul li a:hover,.side-fixed-nav ul li a:active{
     text-decoration: none;
-
 }
 .side-fixed-nav ul li:hover{
     opacity: .6            
@@ -308,6 +325,18 @@ ul, li {
     color: #fff;
     padding: 5px 10px;
 }
+/*玩转新藏博*/
+.wanzhuan-expo .carousel{
+    margin-top: 0
+}
+.wanzhuan-expo .carousel .item img{
+    width: 485px;
+    height: 364px;
+}
+.wanzhuan-expo .wanzhuan-content{
+    height: 364px;
+    overflow-y: auto
+}
 /*溯源*/
 .history-holder .gallery-box{
     width: 800px;
@@ -353,7 +382,8 @@ ul, li {
     height: 340px;
     text-align: center;
     color: #fff;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative
 }
 .reports-year .title{
     font-size: 36px;
@@ -367,6 +397,17 @@ ul, li {
     color: #FB9796;
     border: 1px solid #FB9796;
     padding: 5px 15px;
+}
+.reports-year .fixed-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 120px;
+    margin-top: -60px;
+    left: 0
+}
+.reports-year .fixed-content .title{
+    margin-top: 0px;
 }
 .reports-center{
     font-size: 13px;                
@@ -395,6 +436,16 @@ ul, li {
 .reports-right img{
     width: 250px;
     height: 340px
+}
+.list-container{
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+.list-container .breadcrumb{
+    margin-bottom: 0
+}
+.list-container .history-reports{
+    margin-top: 0
 }
 /*联系方式*/
 .contact-us{
