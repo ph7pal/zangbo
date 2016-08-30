@@ -315,7 +315,12 @@ ul, li {
 }
 .media-reports .thumbnail .caption h3{
     font-size: 16px;
-    font-weight: 700
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 10px;    
+}
+.media-reports .thumbnail .caption h3 a{
+    color: #333
 }
 .media-reports .thumbnail .media-title{
     position: absolute;
@@ -424,8 +429,11 @@ ul, li {
     margin-bottom: 15px;
 }
 .reports-center .title{
-    font-weight: 700;
+    font-weight: 700;   
     font-size: 16px
+}
+.reports-center .title a{
+    color: #333
 }
 .reports-right{
     position: relative;
