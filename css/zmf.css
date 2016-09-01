@@ -83,7 +83,7 @@ ul, li {
 }
 .top-navbar .nav-center ul li{
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 65px;
     text-align: center
 }
@@ -501,6 +501,10 @@ ul, li {
 }
 .contact-us .col-xs-3:last-child{
     border-right: none
+}
+.contact-us img{
+    width: 124px;
+    height: 124px
 }
 /*页脚*/
 .footer{
